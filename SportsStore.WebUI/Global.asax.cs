@@ -25,6 +25,11 @@ namespace SportsStore.WebUI
                 new {Controller = "Product", action = "List"}
                 );
 
+            routes.MapRoute(null,
+                            "{category}", // Matches /Football or /AnythingWithNoSlash
+                            new {controller = "Product", action = "List", page = 1}
+                );
+
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters

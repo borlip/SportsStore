@@ -92,3 +92,13 @@ DIV.pager A { font-size: 1.1em; color: #666; text-decoration: none;
 padding: 0 .4em 0 .4em; }
 DIV.pager A:hover { background-color: Silver; }
 DIV.pager A.selected { background-color: #353535; color: White; }
+
+DIV#categories A
+{
+font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block;
+text-decoration: none; padding: .6em; color: Black;
+border-bottom: 1px solid silver;
+}
+DIV#categories A.selected { background-color: #666; color: White; }
+DIV#categories A:hover { background-color: #CCC; }
+DIV#categories A.selected:hover { background-color: #666; }
