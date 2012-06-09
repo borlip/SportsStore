@@ -12,8 +12,8 @@
         @p.Description
         <h4>@p.Price.ToString("c")</h4>
     </div>
-    
-    <div class="pager">
-        @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
-    </div>
 }
+
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
+</div>
