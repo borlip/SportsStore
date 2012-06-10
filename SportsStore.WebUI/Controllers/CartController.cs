@@ -9,7 +9,7 @@ namespace SportsStore.WebUI.Controllers
     public class CartController : Controller
     {
         private readonly IProductRepository repository;
-        private IOrderProcessor orderProcessor;
+        private readonly IOrderProcessor orderProcessor;
 
         public CartController(IProductRepository repo, IOrderProcessor orderProcessor)
         {

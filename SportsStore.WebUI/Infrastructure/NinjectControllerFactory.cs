@@ -20,9 +20,10 @@ namespace SportsStore.WebUI.Infrastructure
         Type controllerType)
         {
             return controllerType == null
-            ? null
-            : (IController)ninjectKernel.Get(controllerType);
+                       ? null
+                       : (IController) ninjectKernel.Get(controllerType);
         }
+
         private void AddBindings()
         {
             ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>();
